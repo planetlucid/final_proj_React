@@ -1,10 +1,11 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Songs</h1>
 
 <table>
   <thead>
-    <tr>
+      <tr>
       <th>Title</th>
       <th>Artist</th>
       <th>Album</th>
@@ -12,9 +13,10 @@
       <th>Genre</th>
       <th>Key</th>
       <th>Mode</th>
+      <th>Rhythm</th>
+      <th>Bpm</th>
       <th>Sales</th>
       <th>Streams</th>
-      <th>Bpm</th>
       <th>Credits</th>
       <th>Structure</th>
       <th>User</th>
@@ -23,6 +25,7 @@
   </thead>
 
   <tbody>
+
     <% @songs.each do |song| %>
       <tr>
         <td><%= song.title %></td>
@@ -32,9 +35,10 @@
         <td><%= song.genre %></td>
         <td><%= song.key %></td>
         <td><%= song.mode %></td>
+        <td><%= song.rhythm %></td>
+        <td><%= song.bpm %></td>
         <td><%= song.sales %></td>
         <td><%= song.streams %></td>
-        <td><%= song.bpm %></td>
         <td><%= song.credits %></td>
         <td><%= song.structure %></td>
         <td><%= song.user_id %></td>

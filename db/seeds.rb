@@ -12,18 +12,37 @@
 #     }])
 # end
 
+# 20.times do
+#     Song.create([{
+#         title: Faker::Types.rb_string,
+#         artist:Faker::FunnyName.two_word_name,
+#         album: Faker::Music.album,
+#         image_url: Faker::Placeholdit.image,
+#         genre:Faker::Types.rb_string,
+#         key:Faker::Music.key,
+#         mode: Faker::Types.rb_string,
+#         sales: Faker::Number.within(range: 1..100000000),
+#         streams:Faker::Number.within(range: 1..100000000),
+#         bpm: Faker::Number.within(range: 1..140),
+#         credits: Faker::Types.rb_string,
+#         structure:Faker::Types.rb_string,
+#         user_id: Faker::Number.within(range: 1..20)
+#     }])
+# end
+
 20.times do
     Song.create([{
         title: Faker::Types.rb_string,
+        rhythm: '3/4',
         artist:Faker::FunnyName.two_word_name,
         album: Faker::Music.album,
         image_url: Faker::Placeholdit.image,
         genre:Faker::Types.rb_string,
         key:Faker::Music.key,
         mode: Faker::Types.rb_string,
-        sales: Faker::Number.within(range: 1..100000000),
-        streams:Faker::Number.within(range: 1..100000000),
-        bpm: Faker::Number.within(range: 1..140),
+        sales: Faker::Number.within(range: 12000..10000000),
+        streams:Faker::Number.within(range: 12000..10000000),
+        bpm: Faker::Number.within(range: 85..140),
         credits: Faker::Types.rb_string,
         structure:Faker::Types.rb_string,
         user_id: Faker::Number.within(range: 1..20)
