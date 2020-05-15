@@ -48,3 +48,6 @@ gem 'active_model_serializers'
 
 #Cool Seed Data
 gem 'faker', '~> 2.11'
+
+#Process manager for applications with multiple components
+gem 'foreman', '~> 0.87.1'
